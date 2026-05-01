@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dokely public-safe static demo with synthetic clinician data.">
+    <title>Dokely Demo</title>
+    <link rel="icon" href="./assets/dokely-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="./assets/dokely-logo.svg" alt="" class="brand-mark">
+        <div>
+          <p class="eyebrow">Synthetic demo</p>
+          <h1>Dokely</h1>
+        </div>
+      </div>
+      <div class="topbar-actions" aria-label="Demo status">
+        <span class="status-pill">No real clinician data</span>
+        <span class="status-pill muted">Static frontend only</span>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="chat-panel" aria-label="Patient conversation">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Patient language to public evidence</p>
+            <h2>Find evidence-aligned doctors</h2>
+          </div>
+          <button id="resetButton" class="icon-button" type="button" aria-label="Reset demo">
+            <span aria-hidden="true">R</span>
+          </button>
+        </div>
+
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <form id="searchForm" class="composer">
+          <label for="symptomInput" class="sr-only">Describe symptoms or care need</label>
+          <input
+            id="symptomInput"
+            name="symptom"
+            autocomplete="off"
+            value="Persistent migraine with light sensitivity"
+          >
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="example-row" aria-label="Example searches">
+          <button type="button" data-query="Knee pain after running">Knee pain</button>
+          <button type="button" data-query="Chest discomfort and family heart history">Heart history</button>
+          <button type="button" data-query="Migraine with light sensitivity">Migraine</button>
+        </div>
+      </section>
+
+      <section class="results-panel" aria-label="Doctor results">
+        <div class="panel-heading compact">
+          <div>
+            <p class="eyebrow">Ranked synthetic fixture</p>
+            <h2>Matching doctors</h2>
+          </div>
+          <div class="segmented" role="group" aria-label="Sort results">
+            <button id="sortRelevance" type="button" class="active">Relevance</button>
+            <button id="sortDistance" type="button">Distance</button>
+          </div>
+        </div>
+        <div id="resultList" class="result-list"></div>
+      </section>
+
+      <aside class="profile-panel" aria-label="Doctor profile">
+        <div id="profileView"></div>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
