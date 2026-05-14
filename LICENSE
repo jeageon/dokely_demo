@@ -1,0 +1,28 @@
+Dokely Demo Evaluation-Only License
+
+Copyright (c) 2026 Jeageon Lee. All rights reserved.
+
+This repository and its contents are provided only for demonstration,
+non-commercial evaluation, and review.
+
+You may view this repository and run the static demo locally for personal,
+non-commercial evaluation only.
+
+No permission is granted to use, copy, modify, distribute, sublicense, sell,
+resell, host, commercialize, or create derivative commercial works from this
+repository without prior written permission from the copyright holder.
+
+Prohibited uses include, but are not limited to:
+
+- Use in a commercial product or paid service.
+- Hosted or software-as-a-service use.
+- Resale, redistribution, sublicensing, or paid access.
+- Use in competing products or services.
+- Use in provider-referral, medical-advice, diagnosis, treatment, prescription,
+  emergency triage, patient-steering, or appointment-booking products.
+- Copying or adapting Dokely's UI, branding, product flows, demo assets, or
+  evidence-generation workflows for commercial use.
+
+All demo data is synthetic and provided for product demonstration only.
+
+Third-party dependencies remain governed by their respective licenses.
